@@ -1,0 +1,151 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+#header {
+  background-color: #ffffff;
+}
+
+#masthead {
+  background-color: #b2eafd;
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #0d2a93;
+}
+
+#projects {
+  background-color: #ffffff;
+}
+
+#contact {
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #3662ff;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover {
+  color: ##0d2a93;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
+  color: #ff7f50;
+}
+
+a:active {
+  /* selected link */
+  color: #994c30;
+}
+
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #0d2a93;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #b2eafd;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+}
+
+.button:hover {
+  color: ##ffffff;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:visited {
+  /* visited link */
+  color: #ffffff;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #0d2a93;
+  text-transform: uppercase;
+  border-bottom: 0px
+}
+
+.button.contact:hover {
+  background-color: #309625;
+  color: #ffffff;
+  border-radius: 3px;
+  border-bottom: 2px solid #e8a130;
+}
+
+.button.resume {
+  background-color: transparent;
+  color: #0d2a93;
+  text-transform: uppercase;
+  border-bottom: 0px
+}
+
+.button.resume:hover {
+  background-color: #309625;
+  color: #ffffff;
+  border-radius: 3px;
+  border-bottom: 2px solid #e8a130;
+}
+
+/*
+Colors used:
+Masthead, accent (Light blue): #b2eafd;
+Primary color (Royal blue): #0d2a93;
+Logo, accent (Yellow): #e8a130;
+Secondary color (Green): 309625;
+*/
