@@ -82,7 +82,7 @@ a {
 }
 
 a:hover {
-  color: ##0d2a93;
+  color: #0d2a93;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -116,10 +116,9 @@ a:focus {
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-}
 
 .button:hover {
-  color: ##ffffff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -217,6 +216,14 @@ nav > ul > li > a:active {
   color: #994c30;
 }
 
+nav > ul > li, .links li {
+  display: inline-block;
+  width: 100;
+}
+
+nav > ul > li, .links li > a {
+  opacity: 100%;
+}
 /*
 Colors used:
 Masthead, accent (Light blue): #b2eafd;
