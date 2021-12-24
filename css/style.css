@@ -17,7 +17,7 @@ body {
   padding: 10px 0;
   margin: 0 auto;
   width: 100%;
-  box-shadow:-1px 5px 9px 0px rgba(50, 50, 50, 0.52);
+  box-shadow: -1px 5px 9px 0px rgba(50, 50, 50, 0.52);
   position: fixed;
 }
 
@@ -31,9 +31,8 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #0d2a93;
-  text-align:center;
+  text-align: center;
 }
-
 
 #projects {
   background-color: #ffffff;
@@ -41,10 +40,12 @@ body {
 
 #contact {
   background-color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
 }
 
 main {
-  padding-top: 220px;
+  padding-top: 180px;
 }
 
 h1, h2, h3, h4 {
@@ -114,17 +115,14 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #b2eafd;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
   color: #ffffff;
   text-decoration: none;
-}
-
-.button:hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .button:visited {
@@ -161,69 +159,178 @@ a:focus {
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
   margin: 25px 0;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .center {
-  text-align:center;
+  text-align: center;
 }
 
 .logo {
   max-width: 250px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
   width: 100;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #994c30;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #994c30;
 }
 
-nav > ul > li, .links li {
+nav>ul>li, .links li {
   display: inline-block;
   width: 100;
 }
 
-nav > ul > li, .links li > a {
-  opacity: 100%;
+nav>ul>li, .links li>a {
+  opacity: 1;
 }
+
+nav>ul>li:hover, .links li>a:hover {
+  opacity: .7;
+}
+
+.links svg {
+  height: 100px;
+  width: 100px;
+  fill: black;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  #header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    font-size: 18px;
+  }
+
+  #masthead span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  #header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 60%
+  }
+
+  .col-lg-5 {
+    width: 40%
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
 /*
 Colors used:
 Masthead, accent (Light blue): #b2eafd;
