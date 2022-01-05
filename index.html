@@ -16,17 +16,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2da28afac5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header id="header">
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/logo/logo_@2x.jpg" alt="Ponderplex Design by Michaela Marie logo">
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -34,11 +37,10 @@
 
   <main>
     <div id="masthead">
-      <div class="container">
+      <div class="container-small">
         <h1> Hello! I'm Michaela.
           <span> I design smart home products & user experiences, inclusive for all. </span>
         </h1>
-        <p> </p>
       </div>
     </div>
 
@@ -1354,12 +1356,11 @@
           </div>
           <div class="column col-md-6 col-lg-5">
             <h3>Project #3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a href="welko.html" class="button">View Case Study</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="button">View Case Study</a>
           </div>
-
         </div>
+
       </div>
     </div>
     </div>
@@ -1368,11 +1369,11 @@
 
   <footer id="contact">
     <div class="container">
-      <div>
+      <div class="center">
         <a href="mailto:ponderplex@gmail.com" class="button contact">Email me</a>
       </div>
 
-      <div>
+      <div class="center">
         <ul class="links">
           <li><a href="https://www.linkedin.com/in/michaela-johnston/" target="_blank">
               <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -1396,7 +1397,10 @@
       <p>Copyright Ponderplex Design 2022</p>
     </div>
   </footer>
-
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

@@ -16,17 +16,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2da28afac5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header id="header">
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/logo/logo_@2x.jpg" alt="Ponderplex Design by Michaela Marie logo">
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -34,62 +37,69 @@
 
   <main>
     <div class="container">
-      <div>
-        <h1>About</h1>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="content-image">
-        <picture>
-          <source srcset="img/about/michaela_@1x.jpg" media=" (max-width: 767px)">
-          <img id="about" src="img/about/michaela_@2x.jpg" alt="Michaela Johnston smiling">
-        </picture>
-      </div>
+      <div class="row">
+        <div class="column col-lg-5">
+          <div class="content-image">
+            <picture>
+              <source srcset="img/about/michaela_@1x.jpg" media=" (max-width: 767px)">
+              <img src="img/about/michaela_@2x.jpg" alt="Michaela Johnston smiling">
+            </picture>
+          </div>
+        </div>
 
         <div class="container">
-          <div>
-            <h2>Bio</h2>
-            <p>Hello, I’m Michaela!
+          <div class="column col-lg-7">
+            <div class="center">
+              <h2>Hello, I'm Michaela!</h2>
+            </div>
+            <p>
               I’m a UX Designer and Multimedia Storyteller from the land of 10,000 lakes. I design smart
               home gadgets & mobile apps at Resideo.
               Offline, I like to teach adaptive ski lessons, jam out on my uke, rollerblade on flat surfaces and make waffles. If I wasn't a designer, I'd be a competitive Boggle player, trivia night
               aficionado or donut taste-tester.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="center">
             <a href="files/michaela_johnston_resume_2021.pdf" target="_blank" class="button resume">Download my resume</a>
           </div>
+        </div>
 
-          <div>
-            <h2>Skills & Tools</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <h3>Relevant Skills</h3>
-                <ul>
-                  <li>Interaction Design, User Research, User Interface (UI)</li>
-                  <li>Frontend Development (HTML, CSS, JavaScript)</li>
-                  <li>Voice User Interface (VUI)</li>
-                  <li>Information Architecture, Wireframing, Prototyping</li>
-                  <li>Web Accessibility Guidelines (WCAG)</li>
-                  <li>Video Editing, Sound Design</li>
-                  <li>Journalism, Writing</li>
-                  <li>Public Speaking</li>
-                  <li>Agile, Collaboration, Problem Solving</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <h3>Tools I Use</h3>
-                <ul>
-                  <li>Adobe XD, Illustrator, Premiere Pro, Photoshop</li>
-                  <li>Overflow, Balsamiq, inVision</li>
-                  <li>Figma, Sketch</li>
-                  <li>Miro, Mural, Jamboard</li>
-                  <li>Microsoft Office</li>
-                  <li>WordPress</li>
-                </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="center">
+              <h3>Skills</h3>
             </div>
+            <ul>
+              <li>Interaction Design, User Research, User Interface (UI)</li>
+              <li>Frontend Development (HTML, CSS, JavaScript)</li>
+              <li>Voice User Interface (VUI)</li>
+              <li>Information Architecture, Wireframing, Prototyping</li>
+              <li>Web Accessibility Guidelines (WCAG)</li>
+              <li>Video Editing, Sound Design</li>
+              <li>Journalism, Writing</li>
+              <li>Public Speaking</li>
+              <li>Agile, Collaboration, Problem Solving</li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <div class="center">
+              <h3>Tools I Use</h3>
+            </div>
+            <ul>
+              <li>Adobe XD, Illustrator, Premiere Pro, Photoshop</li>
+              <li>Overflow, Balsamiq, inVision</li>
+              <li>Figma, Sketch</li>
+              <li>Miro, Mural, Jamboard</li>
+              <li>Microsoft Office</li>
+              <li>WordPress</li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </main>
 
@@ -123,6 +133,10 @@
       <p>Copyright Ponderplex Design 2022</p>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
